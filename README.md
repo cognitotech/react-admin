@@ -1,4 +1,4 @@
-# About
+# React Admin <img src="https://travis-ci.org/siliconstraits/react-admin.svg?branch=master"/>
 Boilerplate for Admin UI application built on React and Flux
 
 # Initial dev setup
