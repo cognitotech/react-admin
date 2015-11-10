@@ -6,7 +6,7 @@ export default class App extends React.Component {
     return (
       <div>
         Welcome!
-        <button className="btn btn-primary">It's bootstrap!</button>
+        <button id="the-bootstrap-btn" className="btn btn-primary">It's bootstrap!</button>
       </div>
     );
   }

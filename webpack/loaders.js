@@ -19,7 +19,7 @@ var htmlLoader = [
   ].join('&')
 ].join('!');
 
-if (ENV === 'development') {
+if (ENV === 'development' || ENV === 'test') {
   cssLoader = [
     'style-loader',
     'css-loader?sourceMap&localIdentName=[name]__[local]___[hash:base64:5]',
