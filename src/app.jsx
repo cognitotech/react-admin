@@ -3,8 +3,8 @@
  */
 
 import './index.html';
-import Home from './pages/Home';
+import App from './pages/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
