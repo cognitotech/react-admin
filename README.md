@@ -18,6 +18,8 @@ npm start
 npm test
 ```
 
+Coverage report placed in `./coverage/` directory
+
 # Production build
 
 ```bash
