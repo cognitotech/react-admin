@@ -3,6 +3,7 @@
  */
 
 import './index.html';
+import './third-party/bootstrap.js';
 import App from './pages/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
