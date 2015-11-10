@@ -1,3 +1,4 @@
+var path = require('path');
 module.exports = function(config) {
   config.set({
     basePath: '',
@@ -9,7 +10,7 @@ module.exports = function(config) {
     preprocessors: {
       'src/tests.js': ['webpack', 'sourcemap'],
     },
-    reporters: ['mocha'],
+    reporters: ['mocha', 'coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
