@@ -1,5 +1,3 @@
-var path = require('path');
-var webpack = require('webpack');
 module.exports = function(config) {
   config.set({
     basePath: '',
@@ -11,7 +9,7 @@ module.exports = function(config) {
     preprocessors: {
       'src/tests.js': ['webpack', 'sourcemap'],
     },
-    reporters: ['mocha', 'coverage'],
+    reporters: ['mocha', 'coverage', 'coveralls'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
@@ -21,6 +19,10 @@ module.exports = function(config) {
     webpack: require('./webpack/config.test'),
     webpackMiddleware: {
       noInfo: true,
+    },
+    coverageReporter: {
+      type: 'lcov', // lcov or lcovonly are required for generating lcov.info files
+      dir: 'coverage/',
     },
   });
 };
