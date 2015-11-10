@@ -12,6 +12,12 @@ npm start
 
 `http://localhost:8763` should now be live with Hot Module Replacement.
 
+# Test
+
+```bash
+npm test
+```
+
 # Production build
 
 ```bash
