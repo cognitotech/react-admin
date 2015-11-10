@@ -4,7 +4,8 @@ Boilerplate for Admin UI application built on React and Flux
 # Initial dev setup
 Make sure you have NodeJS v4 or above. 
 
-```bash  
+```bash
+bower install
 npm install 
 npm start 
 ``` 
@@ -14,6 +15,7 @@ npm start
 # Production build
 
 ```bash
+bower install
 npm install 
 npm run production 
 ```
