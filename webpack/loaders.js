@@ -24,14 +24,14 @@ if (ENV === 'development' || ENV === 'test') {
   if (ENV !== 'test') {
     jsxLoader.push('react-hot');
   }
-  jsxLoader.push('babel-loader?optional[]=runtime&stage=0&plugins=rewire');
+  jsxLoader.push('babel');
   cssLoader = [
     'style-loader',
     'css-loader?sourceMap&localIdentName=[name]__[local]___[hash:base64:5]',
     'postcss-loader'
   ].join('!');
 } else {
-  jsxLoader = ['babel-loader?optional[]=runtime&stage=0&plugins=rewire'];
+  jsxLoader = ['babel'];
   cssLoader = ExtractTextPlugin.extract('style-loader', [
     'css-loader?localIdentName=[hash:base64:5]',
     'postcss-loader'
